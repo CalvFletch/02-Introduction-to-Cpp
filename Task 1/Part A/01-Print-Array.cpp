@@ -7,6 +7,7 @@ int main()
 
     for (int i = 0; i < sizeof(myArray) / sizeof(myArray[0]); i++)
     {
+        //ifelse method
         //std::cout << myArray[i];
         //if (i < (sizeof(myArray) / sizeof(myArray[0])) - 1)
         //    std::cout << ", ";
@@ -15,9 +16,10 @@ int main()
 
         //int = sizeof(myArray) / sizeof(myArray[0]);
 
+        //ternary operator method
         std::cout << myArray[i] << (i < sizeof(myArray) / sizeof(myArray[0]) - 1 ?  ", " : "\n");
     }
-       
+    
     system("pause");
     return 0;
 }
