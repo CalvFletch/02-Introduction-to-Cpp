@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6109d4e5-2c6d-4af9-a1fe-b4f5aa4eadc1}</ProjectGuid>
-    <RootNamespace>My02Fizzbuzz</RootNamespace>
+    <ProjectGuid>{e7076a07-5a96-4109-a7fc-cec55eaba012}</ProjectGuid>
+    <RootNamespace>FizzBuzz</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,7 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Part A\02-FizzBuzz.cpp" />
+    <ClCompile Include="FizzBuzz.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

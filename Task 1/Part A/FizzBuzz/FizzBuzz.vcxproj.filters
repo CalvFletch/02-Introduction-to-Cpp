@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Part A\02-FizzBuzz.cpp">
+    <ClCompile Include="FizzBuzz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
