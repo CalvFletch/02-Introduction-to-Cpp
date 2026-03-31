@@ -1,7 +1,10 @@
 #include <iostream>
 #include <string>
+#include <cassert>
 
-std::string fizzbuzz(int input)
+using namespace std;
+
+string fizzbuzz(int input)
 {
     if (input % 3 == 0 && input % 5 == 0)
         return "FizzBuzz";
@@ -9,13 +12,13 @@ std::string fizzbuzz(int input)
         return "Fizz";
     if (input % 5 == 0)
         return "Buzz";
-    return std::to_string(input);
+    return to_string(input);
 }
 
 int main()
 {
-    std::cout << fizzbuzz(15) << "\n";
-    std::cout << fizzbuzz(7) << "\n";
-    std::cout << fizzbuzz(25) << "\n";
-    std::cout << fizzbuzz(99) << "\n";
+    cout << fizzbuzz(15) << endl;
+    cout << fizzbuzz(7) << endl;
+    cout << fizzbuzz(99) << endl;
+    cout << fizzbuzz(25) << endl;
 }
