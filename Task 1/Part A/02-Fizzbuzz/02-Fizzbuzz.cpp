@@ -17,8 +17,12 @@ string fizzbuzz(int input)
 
 int main()
 {
+    assert(fizzbuzz(3) == "Fizz");     
+    assert(fizzbuzz(5) == "Buzz");     
+    assert(fizzbuzz(15) == "FizzBuzz");
+    assert(fizzbuzz(7) == "7");
+    cout << fizzbuzz(3) << endl;
+    cout << fizzbuzz(5) << endl;
     cout << fizzbuzz(15) << endl;
     cout << fizzbuzz(7) << endl;
-    cout << fizzbuzz(99) << endl;
-    cout << fizzbuzz(25) << endl;
 }
