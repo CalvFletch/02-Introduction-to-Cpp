@@ -17,6 +17,7 @@ string fizzbuzz(int input)
     return to_string(input);
 }
 
+// Runs tests on FizzBuzz function
 int main()
 {
     // Use assertions to check the validity of the fizzbuzz function
@@ -25,9 +26,7 @@ int main()
     assert(fizzbuzz(15) == "FizzBuzz");
     assert(fizzbuzz(7) == "7");
 
-    // Test some numbers that should give us one of each of the possible results
-    cout << fizzbuzz(3) << endl;
-    cout << fizzbuzz(5) << endl;
-    cout << fizzbuzz(15) << endl;
-    cout << fizzbuzz(7) << endl;
+    // Test numbers 1-20
+    for (int i = 1; i <= 20; i++)
+        cout << fizzbuzz(i) << endl;
 }
