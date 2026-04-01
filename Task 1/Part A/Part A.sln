@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-Print-Array", "01-Print-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-Fizzbuzz", "02-Fizzbuzz\02-Fizzbuzz.vcxproj", "{B40E4110-B2C8-4672-8D4D-AA89AF43E2C6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Minimum-Element", "Minimum-Element\Minimum-Element.vcxproj", "{F48275B2-8A85-49F1-89BE-B99DBC8099C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{B40E4110-B2C8-4672-8D4D-AA89AF43E2C6}.Release|x64.Build.0 = Release|x64
 		{B40E4110-B2C8-4672-8D4D-AA89AF43E2C6}.Release|x86.ActiveCfg = Release|Win32
 		{B40E4110-B2C8-4672-8D4D-AA89AF43E2C6}.Release|x86.Build.0 = Release|Win32
+		{F48275B2-8A85-49F1-89BE-B99DBC8099C4}.Debug|x64.ActiveCfg = Debug|x64
+		{F48275B2-8A85-49F1-89BE-B99DBC8099C4}.Debug|x64.Build.0 = Debug|x64
+		{F48275B2-8A85-49F1-89BE-B99DBC8099C4}.Debug|x86.ActiveCfg = Debug|Win32
+		{F48275B2-8A85-49F1-89BE-B99DBC8099C4}.Debug|x86.Build.0 = Debug|Win32
+		{F48275B2-8A85-49F1-89BE-B99DBC8099C4}.Release|x64.ActiveCfg = Release|x64
+		{F48275B2-8A85-49F1-89BE-B99DBC8099C4}.Release|x64.Build.0 = Release|x64
+		{F48275B2-8A85-49F1-89BE-B99DBC8099C4}.Release|x86.ActiveCfg = Release|Win32
+		{F48275B2-8A85-49F1-89BE-B99DBC8099C4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

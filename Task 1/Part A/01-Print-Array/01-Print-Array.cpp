@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 int main()
 {
@@ -17,7 +18,7 @@ int main()
         //int = sizeof(myArray) / sizeof(myArray[0]);
 
         //ternary operator method
-        std::cout << myArray[i] << (i < sizeof(myArray) / sizeof(myArray[0]) - 1 ? ", " : "\n");
+        cout << myArray[i] << (i < sizeof(myArray) / sizeof(myArray[0]) - 1 ? ", " : "\n");
     }
 
     system("pause");

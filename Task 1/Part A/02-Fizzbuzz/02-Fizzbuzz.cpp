@@ -6,7 +6,7 @@ using namespace std;
 
 // Checks if input int is divisable by 3 and or 5 or 
 // else returns the number as a string.
-string fizzbuzz(int input)
+string fizzBuzz(int input)
 {
     if (input % 3 == 0 && input % 5 == 0)
         return "FizzBuzz";
@@ -21,12 +21,12 @@ string fizzbuzz(int input)
 int main()
 {
     // Use assertions to check the validity of the fizzbuzz function
-    assert(fizzbuzz(3) == "Fizz");     
-    assert(fizzbuzz(5) == "Buzz");     
-    assert(fizzbuzz(15) == "FizzBuzz");
-    assert(fizzbuzz(7) == "7");
+    assert(fizzBuzz(3) == "Fizz");     
+    assert(fizzBuzz(5) == "Buzz");     
+    assert(fizzBuzz(15) == "FizzBuzz");
+    assert(fizzBuzz(7) == "7");
 
     // Test numbers 1-20
     for (int i = 1; i <= 20; i++)
-        cout << fizzbuzz(i) << endl;
+        cout << fizzBuzz(i) << endl;
 }
