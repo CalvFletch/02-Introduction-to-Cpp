@@ -8,5 +8,6 @@ int calculateAccuracy(int hits, int fired)
 }
 int main()
 {
-    cout << calculateAccuracy(3,4) + "%";
+    assert(calculateAccuracy(3, 4) == 75);
+    cout << calculateAccuracy(3, 4) << "%" << endl;
 }
