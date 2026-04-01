@@ -29,6 +29,9 @@ int main()
     assert(linearSearch(myArray, arraySize, 67) == 0);
     assert(linearSearch(myArray, arraySize, 88) == -1); //value not in the array
 
-    cout << linearSearch(myArray, arraySize, 3) << endl;
-
+    // User input search
+    int userInput;
+    cout << "Search array: ";
+    cin >> userInput;
+    cout << "Index: " << linearSearch(myArray, arraySize, userInput) << endl;
 }
