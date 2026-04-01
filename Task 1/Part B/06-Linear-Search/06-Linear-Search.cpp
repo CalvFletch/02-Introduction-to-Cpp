@@ -30,8 +30,18 @@ int main()
     assert(linearSearch(myArray, arraySize, 88) == -1); //value not in the array
 
     // User input search
-    int userInput;
-    cout << "Search array: ";
-    cin >> userInput;
-    cout << "Index: " << linearSearch(myArray, arraySize, userInput) << endl;
+    bool exit = false;
+    string userInput;
+    while (userInput != "q")
+    {
+        cout << "\"Q to exit\n";
+        cout << "Search array: ";
+        cin >> userInput;
+        int userInput = userInput;
+        int result = linearSearch(myArray, arraySize, userInput)
+        if (result > 0) {
+            cout << userInput << " was not found in the array";
+        };
+        cout << "Index: " << result << endl;
+    }
 }
