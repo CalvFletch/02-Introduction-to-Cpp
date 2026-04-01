@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// create array then print it to the console
 int main()
 {
     // Create array

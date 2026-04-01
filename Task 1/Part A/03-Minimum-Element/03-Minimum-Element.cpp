@@ -12,6 +12,7 @@ int minimumElement(int arr[], int size)
     return minimum;
 }
 
+// Create an array and run the find minimum function with that array
 int main()
 {    
     // Create array
