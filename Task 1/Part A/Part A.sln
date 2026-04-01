@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-Print-Array", "01-Print-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-Fizzbuzz", "02-Fizzbuzz\02-Fizzbuzz.vcxproj", "{B40E4110-B2C8-4672-8D4D-AA89AF43E2C6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-Minimum-Element", "03-Minimum-Element\Minimum-Element.vcxproj", "{F48275B2-8A85-49F1-89BE-B99DBC8099C4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-Minimum-Element", "03-Minimum-Element\03-Minimum-Element.vcxproj", "{F48275B2-8A85-49F1-89BE-B99DBC8099C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
