@@ -61,7 +61,7 @@ void printStats(Player input)
 	cout << "Health: " << input.health << endl;
 	cout << "Speed: " << input.speed << endl;
 	cout << "Strength: " << input.strength << endl;
-	cout << "Magic: " << input.magic << endl;
+	cout << "Magic: " << input.magic << endl << endl;
 }
 
 int main()
@@ -71,7 +71,17 @@ int main()
 	printStats(testPlayer);
 	// Takes potions
 	testPlayer = applyPotion(HEALTH, testPlayer);
-	testPlayer = applyPotion(SPEED, testPlayer);
-	// End
+	cout << "*Takes Health potion*\n";
 	printStats(testPlayer);
+	testPlayer = applyPotion(SPEED, testPlayer);
+	cout << "*Takes Speed potion*\n";
+	printStats(testPlayer);
+	testPlayer = applyPotion(STRENGTH, testPlayer);
+	cout << "*Takes Strength potion*\n";
+	printStats(testPlayer);
+	testPlayer = applyPotion(MAGIC, testPlayer);
+	cout << "*Takes Magic potion*\n";
+	printStats(testPlayer);
+
+
 }
