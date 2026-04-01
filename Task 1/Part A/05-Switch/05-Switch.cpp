@@ -67,51 +67,51 @@ void printStats(Player input)
 
 int main()
 {
-	const Player healthPlayer;
-	Player resultHealthPlayer = applyPotion(HEALTH, healthPlayer);
-	assert(resultHealthPlayer.health == 100);
-	assert(resultHealthPlayer.speed == 10);
-	assert(resultHealthPlayer.strength == 15);
-	assert(resultHealthPlayer.magic == 30);
+	const Player healthIn;
+	Player healthOut = applyPotion(HEALTH, healthIn);
+	assert(healthOut.health == 100);
+	assert(healthOut.speed == 10);
+	assert(healthOut.strength == 15);
+	assert(healthOut.magic == 30);
 
-	const Player speedPlayer;
-	Player resultSpeedPlayer = applyPotion(SPEED, speedPlayer);
-	assert(resultSpeedPlayer.health == 20);
-	assert(resultSpeedPlayer.speed == 50);
-	assert(resultSpeedPlayer.strength == 5);
-	assert(resultSpeedPlayer.magic == 10);
+	const Player speedIn;
+	Player speedOut = applyPotion(SPEED, speedIn);
+	assert(speedOut.health == 20);
+	assert(speedOut.speed == 50);
+	assert(speedOut.strength == 5);
+	assert(speedOut.magic == 10);
 
-	const Player strengthPlayer;
-	Player resultStrengthPlayer = applyPotion(STRENGTH, strengthPlayer);
-	assert(resultStrengthPlayer.health == 60);
-	assert(resultStrengthPlayer.speed == 25);
-	assert(resultStrengthPlayer.strength == 200);
-	assert(resultStrengthPlayer.magic == 30);
+	const Player strengthIn;
+	Player strOut = applyPotion(STRENGTH, strengthIn);
+	assert(strOut.health == 60);
+	assert(strOut.speed == 25);
+	assert(strOut.strength == 200);
+	assert(strOut.magic == 30);
 
-	const Player magicPlayer;
-	Player resultMagicPlayer = applyPotion(MAGIC, magicPlayer);
-	assert(resultMagicPlayer.health == 30);
-	assert(resultMagicPlayer.speed == 10);
-	assert(resultMagicPlayer.strength == 10);
-	assert(resultMagicPlayer.magic == 100);
+	const Player magicIn;
+	Player magOut = applyPotion(MAGIC, magicIn);
+	assert(magOut.health == 30);
+	assert(magOut.speed == 10);
+	assert(magOut.strength == 10);
+	assert(magOut.magic == 100);
 
 
-	Player testPlayer;
+	Player printTest;
 	// Start
-	printStats(testPlayer);
+	printStats(printTest);
 	// Takes potions
-	testPlayer = applyPotion(HEALTH, testPlayer);
+	printTest = applyPotion(HEALTH, printTest);
 	cout << "*Takes Health potion*\n";
-	printStats(testPlayer);
-	testPlayer = applyPotion(SPEED, testPlayer);
+	printStats(printTest);
+	printTest = applyPotion(SPEED, printTest);
 	cout << "*Takes Speed potion*\n";
-	printStats(testPlayer);
-	testPlayer = applyPotion(STRENGTH, testPlayer);
+	printStats(printTest);
+	printTest = applyPotion(STRENGTH, printTest);
 	cout << "*Takes Strength potion*\n";
-	printStats(testPlayer);
-	testPlayer = applyPotion(MAGIC, testPlayer);
+	printStats(printTest);
+	printTest = applyPotion(MAGIC, printTest);
 	cout << "*Takes Magic potion*\n";
-	printStats(testPlayer);
+	printStats(printTest);
 
 
 }
