@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-Minimum-Element", "03-Mi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04-Statistics", "04-Statistics\04-Statistics.vcxproj", "{D3C5972B-2DFC-4530-89D8-AC778C0D97ED}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05-Switch", "05-Switch\05-Switch.vcxproj", "{5A341306-754A-4540-BD68-3EB2D4B292CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{D3C5972B-2DFC-4530-89D8-AC778C0D97ED}.Release|x64.Build.0 = Release|x64
 		{D3C5972B-2DFC-4530-89D8-AC778C0D97ED}.Release|x86.ActiveCfg = Release|Win32
 		{D3C5972B-2DFC-4530-89D8-AC778C0D97ED}.Release|x86.Build.0 = Release|Win32
+		{5A341306-754A-4540-BD68-3EB2D4B292CD}.Debug|x64.ActiveCfg = Debug|x64
+		{5A341306-754A-4540-BD68-3EB2D4B292CD}.Debug|x64.Build.0 = Debug|x64
+		{5A341306-754A-4540-BD68-3EB2D4B292CD}.Debug|x86.ActiveCfg = Debug|Win32
+		{5A341306-754A-4540-BD68-3EB2D4B292CD}.Debug|x86.Build.0 = Debug|Win32
+		{5A341306-754A-4540-BD68-3EB2D4B292CD}.Release|x64.ActiveCfg = Release|x64
+		{5A341306-754A-4540-BD68-3EB2D4B292CD}.Release|x64.Build.0 = Release|x64
+		{5A341306-754A-4540-BD68-3EB2D4B292CD}.Release|x86.ActiveCfg = Release|Win32
+		{5A341306-754A-4540-BD68-3EB2D4B292CD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
