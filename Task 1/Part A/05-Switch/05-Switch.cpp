@@ -11,14 +11,19 @@ enum PotionType
 };
 
 struct Player 
-{ 
+{
 	int health = 30; 
 	int speed = 10; 
 	int strength = 15; 
 	int magic = 30; 
 };
 
-// Switch case for applying different types of potions and their values
+/// <summary>
+/// Applies potion effect to the player modifies their stats
+/// </summary>
+/// <param name="type"> The type of potion being consumed </param>
+/// <param name="player"> The player that is recieving the potion </param>
+/// <returns> Updated player with modified stats </returns>
 Player applyPotion(PotionType type, Player player)
 {
 	switch (type)
@@ -47,11 +52,15 @@ Player applyPotion(PotionType type, Player player)
 	return player;
 }
 
+/// <summary>
+/// Prints out each stat of a player to std out
+/// </summary>
+/// <param name="Player"> Player object </param>
 void printStats(Player input)
 {
 	cout << "Health: " << input.health << endl;
 	cout << "Speed: " << input.speed << endl;
-	cout << "Strength: " << input.strength<< endl;
+	cout << "Strength: " << input.strength << endl;
 	cout << "Magic: " << input.magic << endl;
 }
 
@@ -61,8 +70,8 @@ int main()
 	// Start
 	printStats(testPlayer);
 	// Takes potions
-	applyPotion(HEALTH, testPlayer);
-	applyPotion(SPEED, testPlayer);
+	testPlayer = applyPotion(HEALTH, testPlayer);
+	testPlayer = applyPotion(SPEED, testPlayer);
 	// End
 	printStats(testPlayer);
 }
