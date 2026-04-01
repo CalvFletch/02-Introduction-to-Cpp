@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cassert>
 using namespace std;
 
 enum PotionType
@@ -66,6 +67,35 @@ void printStats(Player input)
 
 int main()
 {
+	const Player healthPlayer;
+	Player resultHealthPlayer = applyPotion(HEALTH, healthPlayer);
+	assert(resultHealthPlayer.health == 100);
+	assert(resultHealthPlayer.speed == 10);
+	assert(resultHealthPlayer.strength == 15);
+	assert(resultHealthPlayer.magic == 30);
+
+	const Player speedPlayer;
+	Player resultSpeedPlayer = applyPotion(SPEED, speedPlayer);
+	assert(resultSpeedPlayer.health == 20);
+	assert(resultSpeedPlayer.speed == 50);
+	assert(resultSpeedPlayer.strength == 5);
+	assert(resultSpeedPlayer.magic == 10);
+
+	const Player strengthPlayer;
+	Player resultStrengthPlayer = applyPotion(STRENGTH, strengthPlayer);
+	assert(resultStrengthPlayer.health == 60);
+	assert(resultStrengthPlayer.speed == 25);
+	assert(resultStrengthPlayer.strength == 200);
+	assert(resultStrengthPlayer.magic == 30);
+
+	const Player magicPlayer;
+	Player resultMagicPlayer = applyPotion(MAGIC, magicPlayer);
+	assert(resultMagicPlayer.health == 30);
+	assert(resultMagicPlayer.speed == 10);
+	assert(resultMagicPlayer.strength == 10);
+	assert(resultMagicPlayer.magic == 100);
+
+
 	Player testPlayer;
 	// Start
 	printStats(testPlayer);
