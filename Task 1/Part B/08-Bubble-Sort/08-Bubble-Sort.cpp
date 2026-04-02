@@ -7,8 +7,8 @@ void bubbleSort(int arr[], int size)
 {
     bool swapped = true;
     while (swapped == true) {
+        swapped = false;
         for (int i = 0; i < size - 1; i++) {
-            swapped = false;
             if (arr[i] > arr[i + 1])
             {
                 int temp = arr[i];
