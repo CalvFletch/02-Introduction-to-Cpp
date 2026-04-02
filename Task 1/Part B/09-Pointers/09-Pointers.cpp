@@ -3,12 +3,16 @@
 using namespace std;
 
 /// <summary>
-/// Swap pointers of input A with input B
+/// Using pointers to swap the values of input A with input B
 /// </summary>
 /// <param name="a"> Input A </param>
 /// <param name="b"> Input B </param>
-void swapPointer(int* a, int* b) 
+void swapValues(int* a, int* b) 
 {
+    //Print memory add for clarity
+    cout << a << endl;
+    cout << b << endl;
+
     int temp = *a;
     *a = *b;
     *b = temp;
@@ -22,8 +26,8 @@ int main()
     cout << "Input A: " << inputA << endl;
     cout << "Input B: " << inputB << endl;
 
-    cout << "Swapping Pointers" << endl;
-    swapPointer(&inputA, &inputB);
+    cout << "Swapping Values" << endl;
+    swapValues(&inputA, &inputB);
     
     // Assert tests and print result
     assert(inputA == 67);
