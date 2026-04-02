@@ -46,9 +46,9 @@ int main()
     bubbleSort(myArray, arraySize);
     cout << "Array after: ";
     printArray(myArray, arraySize);
-
+     
+    // Check everything is sorted
     for (int i = 0; i < arraySize - 1; i++) {
         assert(myArray[i] < myArray[i + 1]);
-        cout << myArray[i];
     }
 }
