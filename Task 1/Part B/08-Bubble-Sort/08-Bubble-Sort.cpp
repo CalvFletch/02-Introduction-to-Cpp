@@ -2,7 +2,11 @@
 #include <cassert>
 using namespace std;
 
-
+/// <summary>
+/// Sort selected array with bubble sort method
+/// </summary>
+/// <param name="arr"> Input array to be sorted </param>
+/// <param name="size"> Input arrays length </param>
 void bubbleSort(int arr[], int size)
 {
     bool swapped = true;
