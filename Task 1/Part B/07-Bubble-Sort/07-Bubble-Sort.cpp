@@ -68,6 +68,7 @@ int main()
         assert(myArray[i] < myArray[i + 1]);
     }
 
+    // Check asserts
     assert(binarySearch(myArray, arraySize, 11) == 4);
     assert(binarySearch(myArray, arraySize, 23) == 8);
     assert(binarySearch(myArray, arraySize, 97) == 19);
