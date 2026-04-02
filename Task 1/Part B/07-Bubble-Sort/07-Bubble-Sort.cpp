@@ -24,6 +24,11 @@ void bubbleSort(int arr[], int size)
     };
 }
 
+/// <summary>
+/// Prints formatted arrary
+/// </summary>
+/// <param name="arr"> Input array to be sorted </param>
+/// <param name="size"> Input arrays length </param>
 void printArray(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
@@ -33,6 +38,13 @@ void printArray(int arr[], int size)
     };
 }
 
+/// <summary>
+/// Search through a sorted array by ignoring half of the array each loop
+/// </summary>
+/// <param name="arr"> Input array to be sorted </param>
+/// <param name="size"> Input arrays length </param>
+/// <param name="target"> Int target that is being searched for </param>
+/// <returns> The index of the target being searched; else -1 </returns>
 int binarySearch(int arr[], int size, int target)
 {
     int left = 0;
