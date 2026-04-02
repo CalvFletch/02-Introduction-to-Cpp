@@ -68,6 +68,9 @@ int main()
         assert(myArray[i] < myArray[i + 1]);
     }
 
-    cout << binarySearch(myArray, arraySize, 4324);
+    assert(binarySearch(myArray, arraySize, 11) == 4);
+    assert(binarySearch(myArray, arraySize, 23) == 8);
+    assert(binarySearch(myArray, arraySize, 97) == 19);
+    assert(binarySearch(myArray, arraySize, 88) == -1);
 
 }
