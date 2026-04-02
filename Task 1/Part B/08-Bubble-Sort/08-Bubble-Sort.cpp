@@ -33,6 +33,22 @@ void printArray(int arr[], int size)
     };
 }
 
+int binarySearch(int arr[], int target, int size)
+{
+    int left = 0;
+    int right = size - 1;
+    while (left <= right) {
+        int middle = (left + right) / 2;
+        if (arr[middle] == target)
+            return middle;
+        if (arr[middle] < target)
+            left = middle + 1;
+        if (arr[middle] > target)
+            right = middle - 1;
+    }
+    return -1;
+}
+
 int main()
 {
     // Create array
@@ -51,4 +67,7 @@ int main()
     for (int i = 0; i < arraySize - 1; i++) {
         assert(myArray[i] < myArray[i + 1]);
     }
+
+    cout << binarySearch(myArray, arraySize, 67);
+
 }
