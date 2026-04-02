@@ -11,7 +11,7 @@ void bubbleSort(int arr[], int size)
 {
     bool swapped = true;
     while (swapped == true) {
-        swapped = false;
+        swapped = false; // exit early when this doesn't get set in the loop
         for (int i = 0; i < size - 1; i++) {
             if (arr[i] > arr[i + 1])
             {
@@ -28,7 +28,7 @@ void printArray(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        //ternary operator method
+        //ternary operator method from part A
         cout << arr[i] << (i < size - 1 ? ", " : "\n");
     };
 }
@@ -46,4 +46,9 @@ int main()
     bubbleSort(myArray, arraySize);
     cout << "Array after: ";
     printArray(myArray, arraySize);
+
+    for (int i = 0; i < arraySize - 1; i++) {
+        assert(myArray[i] < myArray[i + 1]);
+        cout << myArray[i];
+    }
 }
