@@ -43,7 +43,7 @@ int binarySearch(int arr[], int size, int target)
             return middle;
         if (arr[middle] < target)
             left = middle + 1;
-        if (arr[middle] > target)
+        else
             right = middle - 1;
     }
     return -1;
@@ -68,6 +68,6 @@ int main()
         assert(myArray[i] < myArray[i + 1]);
     }
 
-    cout << binarySearch(myArray, arraySize, 67);
+    cout << binarySearch(myArray, arraySize, 4324);
 
 }
