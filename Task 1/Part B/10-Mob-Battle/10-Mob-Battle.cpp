@@ -1,20 +1,45 @@
-// 10-Mob-Battle.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include <string>
+using namespace std;
+
+struct Mob
+{
+    int health = 100;
+    int attackSkill = 10;
+    int damage = 10;
+    string name = "default";
+};
+
+void battle(Mob& mobA, Mob& mobB)
+{
+    // battle mob a and b
+    while (mobA.health <= 0 && mobB.health <= 0) 
+    {
+        for (int round = 0; ; round++) {
+            int roll = rand() % mobA.attackSkill + 1
+            if (roll < 21)
+            mobB.health - mobA.damage
+
+        }
+
+    }
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // create fella and set his values
+    Mob fella;
+    fella.health = 120;
+    fella.attackSkill = 5;
+    fella.damage = 40;
+    fella.name = "fella";
+    // create dude and set his values
+    Mob dude;
+    dude.health = 250;
+    dude.attackSkill = 15;
+    dude.damage = 24;
+    dude.name = "dude";
+    
+
+    battle(fella, dude);
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
