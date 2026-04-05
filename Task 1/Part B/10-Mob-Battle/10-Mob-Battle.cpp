@@ -13,20 +13,21 @@ struct Mob
 };
 
 void attack(Mob attacker, Mob& defender) {
-    int roll = srand(time(0)) % 21 + 1;
+    int roll = rand() % 21 + 1;
     if (roll <= attacker.attackSkill) {
 		defender.health -= attacker.damage;
-		cout << attacker.name << " hit " << defender.name << " for " << attacker.damage << " damage!";
+		cout << attacker.name << " hit " << defender.name << " for " << attacker.damage << " damage!\n";
     }
     else {
-        cout << attacker.name << " Missed " << defender.name;
-    }
+        cout << attacker.name << " Missed " << defender.name << endl;
+}
 }
 
 void battle(Mob& mobA, Mob& mobB) {
     int round = 0;
     while (mobA.health > 0 && mobB.health > 0) {
         round++;
+		cout << "Round: " << round << endl;
         attack(mobA, mobB);
         attack(mobB, mobA);
     }
@@ -42,14 +43,17 @@ void battle(Mob& mobA, Mob& mobB) {
         victor = mobB.name;
     }
     if (draw) {
-        cout << " DRAW! Both mobs killed each other";
+        cout << "DRAW! Both mobs killed each other";
     }
-    else
-		cout << victor << " is the victor, defeated in " << round << " rounds.";
+    else {
+        cout << endl << victor << " is the victor, defeated in ";
+		cout << round << " rounds." << endl;
+    }
 }
 
 int main()
 {
+    srand(time(0));
     // create fella and set his values
     Mob fella;
     fella.health = 120;
