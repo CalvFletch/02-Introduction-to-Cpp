@@ -10,33 +10,25 @@ struct Mob
     string name = "default";
 };
 
-bool rollDice(Mob mob)
-{
-    int roll = rand() % mob.attackSkill + 1;
-    return roll;
-}
 //function attack(attacker, defender) :
-void attack(Mob attacker, Mob defender)
-//    roll = random number 1 to 21
-{
-    int roll = rand(21);
-    cout << attacker.name "hit" 
+void attack(Mob attacker, Mob& defender) {
+    int roll = rand() % 21 + 1;
+    if (roll <= attacker.attackSkill) {
+		defender.health -= attacker.damage;
+		cout << attacker.name << " hit " << defender.name << " for " << attacker.damage << " damage!";
+    }
+    else {
+        cout << attacker.name << " Missed " << defender.name;
+    }
 }
-//    if roll <= attacker.attackSkill :
-//        defender.health -= attacker.damage
-//        print attacker.name " hit " defender.name " for " attacker.damage " damage!"
-//    else :
-//        print attacker.name " missed " defender.name
 
 void battle(Mob& mobA, Mob& mobB)
 {
     // battle mob a and b
 
     // while neither are 0hp
-    while (mobA.health > 0 || mobB.health > 0)
+    while (mobA.health > 0 && mobB.health > 0)
     {
-
-
         if (rollDice(attacker) < 21)
            attacker.health - mobA.damage;
     }
