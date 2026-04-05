@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 struct Mob
@@ -10,9 +12,8 @@ struct Mob
     string name = "default";
 };
 
-//function attack(attacker, defender) :
 void attack(Mob attacker, Mob& defender) {
-    int roll = rand() % 21 + 1;
+    int roll = srand(time(0)) % 21 + 1;
     if (roll <= attacker.attackSkill) {
 		defender.health -= attacker.damage;
 		cout << attacker.name << " hit " << defender.name << " for " << attacker.damage << " damage!";
@@ -22,16 +23,29 @@ void attack(Mob attacker, Mob& defender) {
     }
 }
 
-void battle(Mob& mobA, Mob& mobB)
-{
-    // battle mob a and b
-
-    // while neither are 0hp
-    while (mobA.health > 0 && mobB.health > 0)
-    {
-        if (rollDice(attacker) < 21)
-           attacker.health - mobA.damage;
+void battle(Mob& mobA, Mob& mobB) {
+    int round = 0;
+    while (mobA.health > 0 && mobB.health > 0) {
+        round++;
+        attack(mobA, mobB);
+        attack(mobB, mobA);
     }
+    bool draw = false;
+    string victor;
+    if (mobA.health <= 0 && mobB.health <= 0) {
+        draw = true;
+    }
+    if (mobA.health > mobB.health) {
+        victor = mobA.name;
+    }
+    if (mobA.health < mobB.health) {
+        victor = mobB.name;
+    }
+    if (draw) {
+        cout << " DRAW! Both mobs killed each other";
+    }
+    else
+		cout << victor << " is the victor, defeated in " << round << " rounds.";
 }
 
 int main()
