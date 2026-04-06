@@ -1,2 +1,0 @@
-I have to go to work, but this is everything I managed to complete today, mob battle is not finished, 
-but I figured I should make a submission and then submit again later tonight when I have fully completed it.

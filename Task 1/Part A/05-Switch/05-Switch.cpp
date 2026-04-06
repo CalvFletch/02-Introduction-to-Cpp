@@ -112,6 +112,4 @@ int main()
 	printTest = applyPotion(MAGIC, printTest);
 	cout << "*Takes Magic potion*\n";
 	printStats(printTest);
-
-
 }
